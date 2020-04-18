@@ -1,6 +1,6 @@
 # California National Park Finder
 
-### App Features
+### App Features:
 - Find national parks in California
 - Use Google Maps to locate parks at a glance
 - Get more information on weather, local news
@@ -18,8 +18,8 @@
 - Imgur
 - News
 
-### System Requirements
+### System Requirements:
 - Windows: XAMPP, Mac: MAMP
 
-### Authors
+### Authors:
 - Caroline Pan, Joe DelRossi, Eric George, Jaime Kim
