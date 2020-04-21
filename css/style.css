@@ -111,6 +111,25 @@ body {
     }
 }
 
+/* Extra small devices - LANDSCAPE (phones, 600px and down) */
+@media only screen and (max-width: 600px) and (orientation: landscape) {
+    .logo { width: 85%; }
+    
+    .landingPageItems { top: 5%; }
+
+    .preference_instructions,
+    .preference_form {
+        font-size: 1.8rem;
+    }
+
+    #submit_button { font-size: 1.4rem;  }
+
+    .preference_form {
+        margin: 12px 0;
+        width: 70%;
+    }
+}
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
 
@@ -509,6 +528,37 @@ body {
     }
 }
 
+/* Extra small devices - LANDSCAPE (phones, 600px and down) */
+@media only screen and (max-width: 600px) and (orientation: landscape) {
+    .weatherMiddle.jumbotron {
+        margin: 1% 0;
+        padding: 2% 0;
+        width: 65%;
+    }
+    .date { font-size: 2rem; }
+    .wi {
+        font-size: 4rem;
+    }
+
+    .currentTemp {
+        font-size: 2rem;
+    }
+
+    .condition,
+    .header {
+        font-size: 1.2rem;
+    }
+
+    .weatherData {
+        font-size: 1.2rem;
+    }
+
+    .leftContainer,
+    .rightContainer {
+        width: 35%;
+    }
+}
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
     .weatherMiddle.jumbotron {
@@ -614,75 +664,8 @@ body {
     }
 }
 
-/* @media only screen and (min-width: 600px) {
-    .weatherMiddle.jumbotron {
-        width: 70%;
-        min-height: 150px;
-    }
-
-    .wi {
-        font-size: 80px;
-    }
-
-    .currentTempAndCondition {
-        margin-left: 40px;
-    }
-
-    .currentTemp {
-        font-size: 40px;
-    }
-
-    .condition {
-        font-size: 18px;
-    }
-
-    .header {
-        font-size: 15px;
-    }
-
-    .weatherData {
-        font-size: 20px;
-    }
-}
-
-@media only screen and (orientation: landscape) and (max-width: 1000px) {
-    .date {
-        font-size: 18px;
-    }
-
-    .weatherMiddle.jumbotron {
-        width: 60%;
-        margin: 0 0 5px;
-        min-height: 0;
-    }
-
-    .wi {
-        font-size: 30px;
-    }
-
-    .currentTemp {
-        font-size: 25px;
-    }
-
-    .weatherBottom {
-        width: 80%;
-        flex-direction: column;
-    }
-
-    .leftContainer,
-    .rightContainer {
-        width: 100%;
-        display: flex;
-        justify-content: space-evenly;
-    }
-
-    .weatherDataContainer {
-        width: 100%;
-    }
-} */
 
 /* News */
-
 .newsFlexContainer {
     height: 100%;
     display: flex;
