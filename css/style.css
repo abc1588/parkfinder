@@ -93,59 +93,55 @@ body {
     margin: 8% 0;
 }
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-
+/* Small devices - PORTRAIT */
+@media only screen and (max-width: 768px) and (orientation: portrait) {
     .preference_instructions,
     .preference_form,
     #submit_button {
         font-size: 2.2rem;
     }
-
     .preference_instructions {
         width: 85%;
     }
-
     .preference_form {
         width: 65%;
     }
 }
 
-/* Extra small devices - LANDSCAPE (phones, 600px and down) */
-@media only screen and (max-width: 600px) and (orientation: landscape) {
-    .logo { width: 85%; }
-    
-    .landingPageItems { top: 5%; }
-
+/* small devices - LANDSCAPE */
+@media only screen and (max-width: 768px) and (orientation: landscape) {
+    .logo {width: 65%; height: 65%;}
     .preference_instructions,
     .preference_form {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
-
-    #submit_button { font-size: 1.4rem;  }
-
+    #submit_button {
+        font-size: 1.2rem;
+    }
+    .preference_instructions {
+        height: 65%;
+        margin-top: 5px;
+    }
     .preference_form {
-        margin: 12px 0;
-        width: 70%;
+        height: 60%;
+        margin: 5% 0;
     }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-
+/* medium devices - PORTRAIT */
+@media only screen and (min-width: 769px) and (orientation: portrait) {
     .preference_instructions,
     .preference_form,
     #submit_button {
         font-size: 2.5rem;
     }
-
     .preference_form {
         width: 80%;
     }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
+/* @media only screen and (min-width: 768px) {} */
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
@@ -156,176 +152,12 @@ body {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-
     .preference_instructions,
     .preference_form,
     #submit_button {
         font-size: 3rem;
     }
 }
-
-/* @media only screen and (max-width: 1366px) and (orientation: landscape) {
-
-    .preference_instructions,
-    .preference_form,
-    #submit_button {
-        font-size: 4.5rem;
-    }
-
-    .preference_instructions {
-        font-weight: bold;
-        text-shadow: 1px 1px 4px lightgray;
-    }
-
-    .preference_form {
-        width: 80%;
-    }
-}
-
-@media only screen and (max-width: 1024px) {
-
-    .preference_instructions,
-    .preference_form,
-    #submit_button {
-        font-size: 4rem;
-    }
-
-    .preference_form {
-        margin: 50px 0;
-        width: 60%;
-    }
-}
-
-@media only screen and (max-width: 1024px) and (orientation: landscape) {
-
-    .preference_instructions,
-    .preference_form,
-    #submit_button {
-        font-size: 3rem;
-    }
-
-    .preference_instructions {
-        margin-top: 0;
-    }
-
-    .preference_form {
-        width: 80%;
-        margin: 40px 0;
-    }
-}
-
-@media only screen and (max-width: 823px) and (orientation: landscape) {
-    .landingPageItems {
-        top: 0%;
-    }
-
-    .logo {
-        width: 85%;
-    }
-
-    .preference_instructions {
-        font-size: 2rem;
-        font-weight: bold;
-        text-shadow: 1px 1px 2px lightgray;
-        margin-top: 0;
-    }
-
-    .preference_form {
-        font-size: 2rem;
-        margin: 16px 0;
-    }
-
-    #submit_button {
-        font-size: 1.8rem;
-    }
-}
-
-@media only screen and (max-width: 812px) and (orientation: landscape) {
-    .logo {
-        width: 75%;
-    }
-}
-
-@media only screen and (max-width: 736px) and (orientation: landscape) {
-    .landingPageItems {
-        top: 2%;
-    }
-
-    .logo {
-        width: 90%;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-
-    .preference_instructions,
-    .preference_form,
-    #submit_button {
-        font-size: 3.5rem;
-    }
-
-    .preference_instructions {
-        width: 85%
-    }
-
-    .preference_form {
-        margin: 40px 0;
-    }
-}
-
-@media only screen and (max-width: 640px) {
-
-    .preference_instructions,
-    .preference_form,
-    #submit_button {
-        font-size: 1.8rem;
-    }
-
-    .preference_instructions {
-        width: 60%;
-    }
-
-    .preference_form {
-        margin: 25px 0;
-        width: 65%;
-    }
-}
-
-@media only screen and (max-width: 640px) and (orientation: landscape) {
-    .logo {
-        width: 85%;
-    }
-
-    .landingPageItems {
-        top: 6%;
-    }
-
-    .preference_instructions,
-    .preference_form {
-        font-size: 1.8rem;
-    }
-
-    .preference_form {
-        width: 70%;
-        margin: 12px 0;
-    }
-
-    #submit_button {
-        font-size: 1.4rem;
-    }
-}
-
-@media only screen and (max-width: 568px) and (orientation: landscape) {
-    .landingPageItems {
-        top: 3%;
-    }
-}
-
-@media only screen and (max-width: 480px) and (orientation: landscape) {
-    .landingPageItems {
-        top: 4%;
-    }
-} */
 
 /* Map Elements, Including Tutorial/Home Buttons */
 
@@ -410,6 +242,7 @@ body {
 
 #carousel-outer>a.carousel-control {
     background-image: none;
+    color: black;
 }
 
 .carousel-indicators {
@@ -497,171 +330,62 @@ body {
     background-color: transparent;
 }
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-    .weatherMiddle.jumbotron {
-        margin: 3% 0;
-        padding: 4% 0;
-        width: 75%;
-    }
-
-    .wi {
-        font-size: 7rem;
-    }
-
-    .currentTemp {
-        font-size: 4rem;
-    }
-
-    .condition,
-    .header {
-        font-size: 1.4rem;
-    }
-
-    .weatherData {
-        font-size: 1.6rem;
-    }
-
-    .leftContainer,
-    .rightContainer {
-        width: 35%;
-    }
+/* Small devices - PORTRAIT */
+@media only screen and (max-width: 768px) and (orientation: portrait) {
+    .weatherMiddle.jumbotron { margin: 3% 0; padding: 4% 0; width: 75%; }
+    .wi { font-size: 7rem; }
+    .currentTemp { font-size: 4rem; }
+    .condition, .header { font-size: 1.4rem; }
+    .weatherData { font-size: 1.6rem;  }
+    .leftContainer, .rightContainer {  height: 35%;     }
+    .newsImageContainer { height: 60%;  }
+    .captionContainer { height: 40%;  }
+    .newsTitle { -webkit-line-clamp: 4;  }
+    .carousel-indicators { bottom: 0; }
 }
 
-/* Extra small devices - LANDSCAPE (phones, 600px and down) */
-@media only screen and (max-width: 600px) and (orientation: landscape) {
-    .weatherMiddle.jumbotron {
-        margin: 1% 0;
-        padding: 2% 0;
-        width: 65%;
-    }
-    .date { font-size: 2rem; }
-    .wi {
-        font-size: 4rem;
-    }
-
-    .currentTemp {
-        font-size: 2rem;
-    }
-
-    .condition,
-    .header {
-        font-size: 1.2rem;
-    }
-
-    .weatherData {
-        font-size: 1.2rem;
-    }
-
-    .leftContainer,
-    .rightContainer {
-        width: 35%;
-    }
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-    .weatherMiddle.jumbotron {
-        margin: 3% 0;
-        padding: 3% 0;
-        width: 75%;
-    }
-
-    .wi {
-        font-size: 8rem;
-    }
-
-    .currentTempAndCondition {
-        margin-left: 8%;
-    }
-
-    .currentTemp {
-        font-size: 5rem;
-    }
-
-    .condition,
-    .header {
-        font-size: 1.6rem;
-    }
-
-    .weatherData {
-        font-size: 1.8rem;
-    }
-
-    .leftContainer,
-    .rightContainer {
-        width: 32%;
-    }
+/* Small devices - LANDSCAPE */
+@media only screen and (max-width: 768px) and (orientation: landscape) {
+    .weatherMiddle.jumbotron { margin: 0; padding: 0; width: 65% }
+    .wi {font-size: 3rem;}
+    .currentTempAndCondition {font-size: 2rem;}
+    .date { font-size: 2.2rem; }
+    .header, .weatherData { font-size: 1.2rem; }
+    .leftContainer, .rightContainer {  height: 35%;     }
+    .newsImageContainer { height: 40%;  }
+    .captionContainer { height: 25%;  }
+    .newsTitle { -webkit-line-clamp: 3;  }
+    .carousel-indicators { bottom: 0; }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-    .weatherMiddle.jumbotron {
-        padding: 3.5% 0;
-        margin: 2.5% 0;
-        width: 70%;
-    }
-
-    .condition,
-    .header {
-        font-size: 1.5rem;
-    }
-
-    .leftContainer,
-    .rightContainer {
-        width: 30%;
-    }
+@media only screen and (min-width: 769px) {
+    .weatherMiddle.jumbotron { padding: 3.5% 0; margin: 2.5% 0; width: 70%; }
+    .condition, .header { font-size: 1.5rem; }
+    .leftContainer, .rightContainer { width: 30%; }
+    .newsImageContainer { height: 50%; }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    .weatherMiddle.jumbotron {
-        padding: 4.5% 0;
-        margin: 2.5% 0;
-    }
-
-    .currentTempAndCondition {
-        margin-left: 6%;
-    }
+    .weatherMiddle.jumbotron { padding: 4.5% 0; margin: 2.5% 0; }
+    .currentTempAndCondition { margin-left: 6%; }
+    .newsTitle { font-size: 2rem; }
+    .newsImageContainer { height: 50%; }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-    .date {
-        font-size: 3rem;
-    }
-
-    .weatherMiddle.jumbotron {
-        padding: 5% 0;
-        margin: 3% 0;
-    }
-
-    /* .wi {
-        font-size: 10rem;
-    } */
-
-    .currentTempAndCondition {
-        width: 50%;
-        margin-left: 8%;
-    }
-
-    /* .currentTemp {
-        font-size: 6rem;
-    } */
-
-    /* .condition, */
-    .header {
-        font-size: 2rem;
-    }
-
-    .weatherData {
-        font-size: 2.5rem;
-    }
-
-    .leftContainer,
-    .rightContainer {
-        width: 35%;
-    }
+    .date { font-size: 4rem;   }
+    .weatherMiddle.jumbotron { padding: 5% 0; margin: 3% 0; }
+    .wi {  font-size: 8rem;    } 
+    .currentTempAndCondition { width: 50%; margin-left: 8%; }
+    .currentTemp { font-size: 4rem; } 
+    .condition { font-size: 2.2rem; } 
+    .header { font-size: 2rem;  }
+    .weatherData { font-size: 2.5rem; }
+    .leftContainer, .rightContainer { width: 35%;    }
+    .newsImageContainer { height: auto; }
 }
 
 
@@ -742,30 +466,6 @@ body {
     font-family: gothamMedium, Arial, Helvetica, sans-serif;
     position: relative;
     top: 20%;
-}
-
-@media only screen and (max-width: 992px) {
-    .newsTitle {
-        font-size: 2rem;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    .newsImageContainer {
-        height: 60%;
-    }
-
-    .captionContainer {
-        height: 40%;
-    }
-
-    .newsTitle {
-        -webkit-line-clamp: 4;
-    }
-
-    .carousel-indicators {
-        bottom: 0;
-    }
 }
 
 /* @media only screen and (max-height: 1366px) {
